@@ -2,12 +2,16 @@
 
 source "https://rubygems.org"
 
-gemspec
+# github-pages 젬 추가
+gem "github-pages", group: :jekyll_plugins
 
-gem 'csv'
-gem 'base64'
-gem 'tzinfo'
-gem 'tzinfo-data'
+group :jekyll_plugins do
+  gem "tzinfo-data"
+  gem "tzinfo", require: false
+  gem "sassc"
+end
+
+gem "csv"
 
 group :test do
   gem "html-proofer", "~> 5.0"
