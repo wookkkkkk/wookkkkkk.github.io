@@ -12,6 +12,7 @@ gem "tzinfo-data"
 gem "tzinfo", require: false
 gem "sassc"
 gem "csv"
+gem 'base64'
 
 group :test do
   gem "html-proofer", "~> 5.0"
